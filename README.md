@@ -19,6 +19,9 @@
    - PASS：执行 `mv ~/temp_skills_quarantine/<name> ~/.codex/skills/<name>`。
    - FAIL：指出问题文件，并用 `rm -rf ~/temp_skills_quarantine/<name>` 清理。
 
+## 初始化（新工作区）
+见 `INIT.md`（包含 Codex 软链接安装、Cursor 规则写入、Antigravity Gatekeeper 的最小落地步骤）。
+
 ## 审计关注点速查（示例命令在 SKILL.md）
 - 网络外联：`fetch|axios|curl|requests|http`
 - 秘密/文件：`.env|ssh|token|secret|credential|key`
