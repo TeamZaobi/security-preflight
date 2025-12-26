@@ -3,6 +3,7 @@
 面向 Codex、Claude Code、Antigravity、Cursor 等 AI Agent 的安全前置审计 Skill/Agent SOP。目标是在启用第三方技能或未知仓库前，先放入隔离区，结合 LLM 和 `rg` 完成意图核查、网络/敏感文件/执行/混淆扫描，给出明确的 PASS/FAIL 结论，防止供应链与提示注入攻击。
 
 各环境对接指引见 `integrations/`（含可直接复制的模板与脚本）。
+给 AI/Agent 的项目初始化说明见 `CLAUDE.md`（Vibe Coding Init）。
 
 ## 主要特性
 - 隔离策略：统一使用 `~/temp_skills_quarantine/<name>`，避免直接落到 `~/.codex/skills/`。
