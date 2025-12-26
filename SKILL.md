@@ -1,11 +1,11 @@
 ---
 name: security-preflight
-description: Pre-install/quarantine security review for external Codex skills or untrusted repos before enabling them. Use this when asked to install or run third-party skills or code: clone into a quarantine path, audit for data exfiltration, secret/file access, obfuscation, and dangerous execution or install hooks, and only promote after an explicit PASS decision.
+description: Pre-install/quarantine security review for external skills or untrusted repos before enabling them in Codex/Claude Code/Antigravity/Cursor. Use this when asked to install or run third-party skills or code: clone into a quarantine path, audit for data exfiltration, secret/file access, obfuscation, and dangerous execution or install hooks, and only promote after an explicit PASS decision.
 ---
 
 # Security Preflight
 
-Guard Codex from untrusted skills or repos before they enter the live skills directory.
+Guard AI agents (Codex, Claude Code, Antigravity, Cursor) from untrusted skills or repos before they enter the live skills directory.
 
 ## Quick use
 - **CRITICAL: Do NOT run `npm install`, `pip install`, builds, or any dependency installs in quarantine before PASS.**
