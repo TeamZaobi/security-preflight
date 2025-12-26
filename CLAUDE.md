@@ -37,7 +37,6 @@
 1) Shell 语法检查：
 ```bash
 bash -n scripts/preflight_rg.sh
-bash -n scripts/init.sh
 ```
 
 2) 扫描脚本可用性（对一个隔离目录）：
@@ -49,4 +48,3 @@ bash scripts/preflight_rg.sh "$HOME/temp_skills_quarantine/<name>"
 
 - 需要为某个平台新增适配：在 `integrations/<platform>.md` 写“最佳落地形态 + 可复制模板 + 注意事项”，并把模板放到 `templates/<platform>/`。
 - 需要增强规则/检查项：优先改 `SKILL.md` 的流程与关键词，再同步到 `templates/common/` 与 Cursor/Antigravity 模板。
-
